@@ -7,6 +7,8 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
       if (!/(&|\?)username=/.test(window.location.search)) {
@@ -26,6 +28,15 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <form class="" action="index.html" method="post">
+        <input id="data" type="text" name="" value="">
+      </form>
+      <button id="send" type="button" name="sendMessage">Send Message</button>
+      <button id="clear"type="button" name="clearMessage">Clear Messages</button>
+      <select id="roomSelect" name="">
+        <option value="null"></option>
+        <option value="New Room">New Room</option>
+      </select>
     </div>
     <div id="chats"></div>
   </body>
